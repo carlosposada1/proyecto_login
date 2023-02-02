@@ -54,8 +54,6 @@ def main(page: ft.Page):
         page.update()
         
     
-   
-    
     c1 = ft.Container(
         ft.Column(controls=[
             
