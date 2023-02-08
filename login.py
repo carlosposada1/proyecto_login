@@ -34,36 +34,28 @@ def main(page: ft.Page):
                 height=70,
                 fit=ft.ImageFit.NONE,
             ),
-        
-        
-         
         width=1920,
         height=70,
         padding=0,
         alignment=ft.alignment.center_left,
         bgcolor="white",
-        border_radius=0,
-        
+        border_radius=0,  
         animate_opacity=300,
     ) 
     
     def btn_click(e):
         titulo = ""
-
         subtitulo = ""
         page.update()
         
     
     c1 = ft.Container(
-        ft.Column(controls=[
-            
-            
+        ft.Column(controls=[  
             ft.Text(f"BOT ACTIVACION MOVIL", size=16, color="black", font_family="Arial", weight="bold" ),
             ft.Text(f"  ", size=5),
             ft.TextField(label="  USER GAC", prefix_icon=ft.icons.PERSON, width=320),
             ft.TextField(label="        PASSWORD GAC",  width=320),
             ft.TextField(label="        PASSWORD UDB",  width=320),
-            
             ft.FilledButton(
             "          Ingresar          ", on_click=btn_click, 
             style=ft.ButtonStyle(
@@ -74,20 +66,16 @@ def main(page: ft.Page):
     ],
                   alignment=ft.MainAxisAlignment.CENTER,
                   horizontal_alignment="center",
-                  ),
-        
+                  ), 
         width=350,
         height=410,
         padding=0,
         alignment=ft.alignment.top_center,
         bgcolor="white",
         border_radius=15,
-        animate_opacity=300,
-        
+        animate_opacity=300,    
     )
 
-    
-    
     page.add(
         c,
         c1,
