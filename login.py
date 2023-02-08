@@ -26,6 +26,7 @@ def main(page: ft.Page):
     
     c = ft.Container(
         
+        
             ft.Image(
                 
                 src=f"/assets/tecno.PNG",
